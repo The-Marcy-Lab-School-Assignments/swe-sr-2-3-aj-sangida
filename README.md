@@ -8,7 +8,7 @@ What are the main differences between Flexbox and Grid layouts? Describe scenari
 
 ### Response 1
 
--->The main difference between **Flexbox** and **Grid** layouts is that:
+The main difference between **Flexbox** and **Grid** layouts is that:
 
 - **Flexbox** was designed for layouts in either a row or a column, which is _one-dimensional_.
 
