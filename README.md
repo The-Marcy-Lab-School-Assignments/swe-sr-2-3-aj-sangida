@@ -35,12 +35,11 @@ What is the difference between `justify-content` and `align-items` in Flexbox? H
 The difference between `justify-content` and `align-items` in **Flexbox** is:
 
 - `justify-content` arranges items on the **main-axis**
-- `align-items` arranges items on the **cross-axis**
-
   - **main-axis** is determined by the direction of the flex container, which can be either a row or a column.
-    - Imagine you had a box of chocolates, you would use `justify-content` to control how the chocolates are laid out _horizontally_ and `align-items` to control how they are laid out _vertically_.
+- `align-items` arranges items on the **cross-axis**
   - **cross-axis** runs down the columns _(horizontally)_ if flex-direction is a row and along the rows _(vertically)_ if flex-direction is a column.
-    - The `align-items` property arranges flex items on the cross-axis.
+  - The `align-items` property arranges flex items on the cross-axis.
+    - Imagine you had a box of chocolates, you would use `justify-content` to control how the chocolates are laid out _horizontally_ and `align-items` to control how they are laid out _vertically_.
 
 ## Prompt 3
 
@@ -233,11 +232,11 @@ Imagine you are teaching a brief lesson on **mobile first design**. Your lesson 
 
 ### Response 5
 
-At first, web designers would build a website that’s optimized for desktop, then take those design elements and shrink them down for mobile. This process is called `_graceful degradation_`, start big and downsize as needed.
+At first, web designers would build a website that’s optimized for desktop, then take those design elements and shrink them down for mobile. This process is called **graceful degradation**, start big and downsize as needed.
 
-- However, this made the user experience **poor** and impacted **user engagement** because of confusion about why certain features is not available for the mobile design and the possible bugs that it could create.
+- However, this made the user experience poor and impacted user engagement because of confusion about why certain features is not available for the mobile design and the possible bugs that it could create.
 
-The **mobile-first design** is called `_progressive enhancement_`. It is a web-development and design approach that focuses on design and development for mobile screen sizes, over design and development for desktop screen sizes.
+The `mobile-first design` is called **progressive enhancement**. It is a web-development and design approach that focuses on design and development for mobile screen sizes, over design and development for desktop screen sizes.
 
 - You start with the small screen and progressively add content to fit the appropriate screen size. This approach makes sure that the website is optimized for the device it's used on.
 
@@ -265,7 +264,7 @@ body {
   }
 
   .container {
-    flex-direction: row; /*Arrange items horizontally on larger screens*/
+    flex-direction: row;
     justify-content: space-between;
   }
 }
