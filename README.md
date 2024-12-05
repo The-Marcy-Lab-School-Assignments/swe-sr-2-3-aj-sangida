@@ -29,66 +29,12 @@ can create great layouts. But let's break it down with code examples!
 
 #### Approach 1: `grid-template-areas` (The Blueprint)
 
-This is like sketching a floor plan and labeling the rooms. The example below shows the CSS grid with `grid-template-areas`.
+This is like sketching a floor plan and labeling the rooms. The image below shows the CSS grid with `grid-template-areas`.
 
-<!-- Example: CSS Grid with grid-template-areas -->
-<div class="grid-container">
-  <div class="header">Header</div>
-  <div class="sidebar">Sidebar</div>
-  <div class="main">Main Content</div>
-  <div class="footer">Footer</div>
-</div>
-
-<style>
-  .grid-container {
-    display: grid;
-
-    grid-template-areas:
-      "header header header" 
-      "sidebar main main"
-      "footer footer footer"; 
-
-    grid-template-rows: 50px 1fr 30px;
-    grid-template-columns: 150px 1fr 1fr;
-
-    gap: 10px;
-  }
-
-  .header {
-    grid-area: header; 
-    background-color: #4CAF50;
-    text-align: center;
-    padding: 10px;
-    color: white;
-  }
-
-  .sidebar {
-    grid-area: sidebar; /* Place in the sidebar area */
-    background-color: #2196F3;
-    text-align: center;
-    padding: 10px;
-    color: white;
-  }
-
-  .main {
-    grid-area: main; 
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .footer {
-    grid-area: footer; /* Place in the footer area */
-    background-color: #555;
-    text-align: center;
-    padding: 10px;
-    color: white;
-  }
-</style>
-</p>
+![Grid-areas-template](/template1.png)
 
 ```js
-<!-- ^Code Explanation: CSS Grid with grid-template-areas -->
+<!-- ^Code for Template Image1: CSS Grid with grid-template-areas -->
 <div class="grid-container">
   <div class="header">Header</div>
   <div class="sidebar">Sidebar</div>
@@ -156,46 +102,12 @@ Why should we use `grid-template-areas`?
 
 #### Approach 2: `grid-template-columns` and `grid-template-rows` (The Precision Approach)
 
-This method is like measuring each room to the last inch. Example below shows the CSS grid with `grid-template-columns` and `grid-template-rows`.
+This method is like measuring each room to the last inch. Image below shows the CSS grid with `grid-template-columns` and `grid-template-rows`.
 
-<!-- Example: CSS Grid with grid-template-columns and grid-template-rows -->
-<div class="grid-container-columns-rows">
-  <div class="item1">Item 1</div>
-  <div class="item2">Item 2</div>
-</div>
-
-<style>
-  .grid-container-columns-rows {
-    display: grid;
-
-    grid-template-rows: 50px 1fr 30px;
-
-    grid-template-columns: 150px 1fr 1fr;
-
-    gap: 10px;
-  }
-
-  .item1 {
-    grid-row: 1; 
-    grid-column: 1 / span 3; 
-    background-color: #4CAF50;
-    text-align: center;
-    padding: 10px;
-    color: white;
-  }
-
-  .item2 {
-    grid-row: 2; 
-    grid-column: 1; 
-    background-color: #2196F3;
-    text-align: center;
-    padding: 10px;
-    color: white;
-  }
-</style>
+![Grid-column-row-template](/template2.png)
 
 ```js
-<!-- ^Code Explanation: CSS Grid with grid-template-columns and grid-template-rows -->
+<!-- ^Code for Template Image2: CSS Grid with grid-template-columns and grid-template-rows -->
 <div class="grid-container-columns-rows">
   <div class="item1">Item 1</div>
   <div class="item2">Item 2</div>
